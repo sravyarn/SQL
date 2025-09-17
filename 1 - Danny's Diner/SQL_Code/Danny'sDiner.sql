@@ -199,3 +199,5 @@ case when sales_cte.member = 'Y' then rank () over (partition by sales_cte.custo
 case when sales_cte.member = 'Y' then 1 else null end
 order by sales_cte.order_date asc) end as ranking from sales_cte
 
+
+SELECT 3

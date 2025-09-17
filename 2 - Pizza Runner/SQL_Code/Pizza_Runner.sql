@@ -397,3 +397,8 @@ where len(trim(value)) > 0)
  where not exists (select * from ingwithexcludelist_cte e2 where e2.RN = e1.RN and e2.ingwithexcludelist = e1.ingwithextralist)
  group by cast(pt.topping_name as varchar(30))
  order by 2 desc
+
+
+-- FIX 2
+
+SELECT 1
